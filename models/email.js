@@ -4,6 +4,9 @@ const emailSchema= new mongoose.Schema({
         required:true,
         unique:true
     },
+    customProbelms:{
+        type:[String],
+    }
 });
 const waitlistSchema = new mongoose.Schema({
     count:{type:Number,default:0},
